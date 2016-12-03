@@ -1,8 +1,4 @@
 #/bin/bash
-#111111111
-#2222222
-#3333333
-#
 # My Vars
 export src=~/Documents/src
 export DOWNLOADS="$HOME/New/Downloads"
