@@ -356,15 +356,13 @@ def_key "|"
 #def_key "ctrl-r"
 #  reverse_playlist
 #
-#def_key "ctrl-f"
-#  find
 #  apply_filter
-#
+
 #
 
 def_key "/"
- find_item_forward 
-# apply_filter
+ apply_filter
+#find_item_forward 
 def_key "?"
   next_found_item
 #
@@ -378,6 +376,8 @@ def_key "."
 #
 def_key ","
    seek_backward
+
+
 #  previous_found_item
 #
 #def_key "w"
