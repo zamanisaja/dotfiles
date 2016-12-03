@@ -1,0 +1,5 @@
+{
+    "auto_complete_function_params": "all",
+    "auto_complete_function_params": "",
+    "sublime_completions_visibility": "jedi"
+}

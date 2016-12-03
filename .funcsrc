@@ -1,0 +1,131 @@
+#/bin/bash
+#111111111
+#2222222
+#3333333
+#
+# My Vars
+export src=~/Documents/src
+export DOWNLOADS="$HOME/New/Downloads"
+export MOBILE=192.168.1.143
+export TABLET=192.168.1.141:5555
+export GOPATH="$HOME/workspace/go"
+export PI=192.168.1.135
+
+function rainbow(){
+    yes "$(seq 231 -1 16)" | while read i; do printf "\x1b[48;5;${i}m\n"; sleep .02; done
+}
+
+function weather(){
+	 if [[ "$1" = "" ]]; then
+	 	LOCATION="Tehran"
+	 	else
+	 	LOCATION="$1"	
+	 fi
+	  curl -3 "http://wttr.in/$LOCATION"
+}
+function moonphase(){
+        curl http://wttr.in/Moon
+
+}
+
+function subfa(){
+if [[ "$11" == "" ]]; then
+    printf "Use like this:\nsubfa file.srt\n" 
+else
+    iconv -f "cp1256" -t "utf-8" "$1" -o tmpsub.srt
+    name=$(sed 's/.srt//' "$1")
+    mv tmpsub.srt "$name-fa.srt"
+fi
+}
+
+
+function subconvert(){
+PWD=$(pwd)
+    for file in $@
+do
+    #file="$PWD/$file"
+    if [[ "$file" == *".vtt" ]]
+    then
+        name=$(echo "$file" | sed 's/.vtt$//')
+        ffmpeg -loglevel panic -y -i "$file" -f srt "$name".srt
+        rm "$file"
+    elif [ -d "$file" ]
+    then
+        find "$file" -type f -name "*vtt" | while read -r line; do
+            name=$(echo "$line" | sed 's/.vtt$//')
+            ffmpeg -loglevel panic -y -i "$line" -f srt "$name".srt
+            rm "$line"
+        done
+    fi
+done
+}
+
+function swap(){
+        FIRSTFILE="$1"
+        SECFILE="$2"
+        TMPFILE="tmp$(rand)"
+        mv "$FIRSTFILE" "$TMPFILE"
+        mv "$SECFILE" "$FIRSTFILE"
+        mv "$TMPFILE" "$SECFILE"
+}
+
+
+function mpd(){
+    if [ -e "/tmp/mpd.fifo" ]; then
+        ncmpcpp 
+        mpdscribble
+    else
+        /usr/bin/mpd -v
+        mpc update
+        ncmpcpp
+    fi
+}
+
+mpi(){
+    if [[ $@ == "-p 6700" ]]; then
+        command ncmpcpp -h $PI --config ~/.ncmpcpp/config3 -p 6700
+    else
+        command ncmpcpp -h $PI --config ~/.ncmpcpp/config2 "$@"
+    fi
+}
+ping(){
+    if [[ $@ == "" ]]; then
+        command ping "$PI"
+    else
+        command ping $@
+    fi
+}
+
+function csvpreview(){
+      sed 's/,,/, ,/g;s/,,/, ,/g' "$@" | column -s, -t | less -#2 -N -S
+}
+
+#Aliases
+alias ls='ls --color'
+alias l='ls'
+alias sudo='nocorrect sudo '
+alias jcal="jcal -p"
+alias grep="grep -Hn"
+alias nemo="nemo ."
+alias manpdf="man -t $1 | okular - "
+alias ..="cd .."
+# alias anki="anki -b .Anki"
+alias sshfs="sshfs -o follow_symlinks"
+alias fdupes="fdupes -R -d"
+alias clera="clear"
+alias clare="clear"
+alias subl="subl -a"
+# alias cmus="cd ~/.cmus/;cmus"
+alias locate="locate --regex -i -d $src/lists/Saja.db"
+# alias Dropbox="/usr/bin/dropbox"
+# alias cmatrix="cmatrix -b -s"
+alias open="xdg-open"
+# alias mpy="mpv \"https://www.youtube.com/feed/subscriptions\""
+alias cp="cp -i -r"
+alias mv="mv -i"
+alias ytdl="ytdl -b"
+alias subliminal="subliminal download -l en -l fa -l es"
+alias mountsaja="sshfs pi:/media/Saja/ /media/Saja"
+
+eval "$(thefuck --alias)"
+eval "$(thefuck --alias FUCK)"

@@ -1,0 +1,31 @@
+--format 'mp4'
+--format 'bestvideo[ext=mp4]+bestaudio[ext=mp3]/best[ext=mp4]/best'
+
+--no-playlist 
+--continue 
+--no-part
+--no-overwrites
+
+
+--output '(%(upload_date)s)-%(uploader)s-%(title)s-(%(id)s).%(ext)s'
+--restrict-filenames 
+
+
+--prefer-ffmpeg
+--verbose
+--ignore-errors
+
+#--netrc
+--audio-format mp3
+--audio-quality 0
+
+--download-archive "~/.config/youtube-dl/archive.txt"
+--cookie '~/.config/youtube-dl/cookie.txt'
+
+
+
+--write-sub
+--write-auto-sub
+--convert-subs srt
+--sub-lang en,es,fa
+

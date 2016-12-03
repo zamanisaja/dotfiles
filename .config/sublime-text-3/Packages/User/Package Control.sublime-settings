@@ -1,0 +1,21 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Anaconda",
+		"Color Highlighter",
+		"DictionaryAutoComplete",
+		"EasyClangComplete",
+		"HTML-CSS-JS Prettify",
+		"Jedi - Python autocompletion",
+		"Package Control",
+		"Seti_UI",
+		"Seti_UX",
+		"SideBarEnhancements",
+		"Theme - Primer",
+		"Theme - Spacegray"
+	]
+}

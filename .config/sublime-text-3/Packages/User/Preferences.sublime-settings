@@ -1,0 +1,24 @@
+{
+	"Seti_sidebar_font_size_14": true,
+	"anaconda_gutter_marks": false,
+	"anaconda_linter_mark_style": "none",
+	"anaconda_linter_underlines": false,
+	"auto_complete_triggers":
+	[
+		{
+			"characters": ".",
+			"selector": "source.python - string - comment - constant.numeric"
+		}
+	],
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"default_encoding": "UTF-16",
+	"font_size": 11,
+	"ignored_packages":
+	[
+		"Jedi - Python autocompletion"
+	],
+	"theme": "Seti_orig.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"update_check": false,
+	"word_wrap": "show"
+}
