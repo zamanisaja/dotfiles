@@ -100,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 PROMPT="${ret_status} %{$fg[cyan]%}%c%{$reset_color%} "
 # PROMPT="${ret_status} %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)"
 
-source ~/.funcsrc
+source ~/.functions
 unsetopt share_history
 setopt no_share_history
 HISTFILE=$HOME/.history
