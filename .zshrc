@@ -1,13 +1,13 @@
 # pip zsh completion start
-# function _pip_completion {
-#   local words cword
-#   read -Ac words
-#   read -cn cword
-#   reply=( $( COMP_WORDS="$words[*]" \
-#              COMP_CWORD=$(( cword-1 )) \
-#              PIP_AUTO_COMPLETE=1 $words[1] ) )
-# }
-# compctl -K _pip_completion pip
+function _pip_completion {
+  local words cword
+  read -Ac words
+  read -cn cword
+  reply=( $( COMP_WORDS="$words[*]" \
+             COMP_CWORD=$(( cword-1 )) \
+             PIP_AUTO_COMPLETE=1 $words[1] ) )
+}
+compctl -K _pip_completion pip
 # pip zsh completion end
 
 zstyle ':completion:*:*:mpv:*' tag-order '!urls'
@@ -43,7 +43,7 @@ DISABLE_AUTO_UPDATE="true"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-DISABLE_AUTO_TITLE="true"
+# DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -68,7 +68,8 @@ DISABLE_AUTO_TITLE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-# plugins=(git thefuck)
+
+plugins=(git thefuck terminalapp)
 
 source $ZSH/oh-my-zsh.sh
 

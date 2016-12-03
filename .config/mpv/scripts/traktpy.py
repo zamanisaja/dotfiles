@@ -1,8 +1,7 @@
-#! /usr/bin/env python
+#! /usr/bin/python2.7
+# /usr/bin/env python
 # -*- coding: utf-8 -*-
 # vim:fenc=utf-8
-#
-# Copyright © 2016 saja <saja@saja-PC>
 #
 # Distributed under terms of the MIT license.
 
@@ -52,9 +51,11 @@ def get_access(config_file):
 def init_token():
     valid_config = False
     config_file = os.path.join( os.path.dirname(os.path.abspath(__file__)) ,"trakt.txt" )
-    f = open ( config_file , "r")
-    text = f.readline()
-    f.close()
+    if not os.path.isfile(config_file):
+        open ( config_file , "a" ).close()
+    with open ( config_file , "r") as f:
+        text = f.readline()
+        f.close()
     try:
         authorization = ast.literal_eval(text)
         valid_config = True

@@ -1,5 +1,5 @@
 mputils = require 'mp.utils'
-traktpy = "/home/saja/.mpv/scripts/traktpy.py"
+traktpy = "/home/saja/.config/mpv/scripts/traktpy.py"
 
 function start_to_traktpy(  )
     path = mp.get_property("path")
