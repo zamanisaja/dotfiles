@@ -47,7 +47,8 @@ do
         rm "$file"
     elif [ -d "$file" ]
     then
-        find "$file" -type f -name "*vtt" | while read -r line; do
+        cd "$file"
+        find -type f -name "*vtt" | while read -r line; do
             name=$(echo "$line" | sed 's/.vtt$//')
             ffmpeg -loglevel panic -y -i "$line" -f srt "$name".srt
             rm "$line"
