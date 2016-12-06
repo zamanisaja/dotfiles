@@ -16,7 +16,7 @@ zstyle ':completion:*:*:mpv:*' tag-order '!urls'
 # If you come from bash you might have to change your $PATH.
 
 export PATH="$HOME/workspace/bin/bin:/usr/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH"
-export PATH=$HOME/workspace/anaconda/bin:$PATH
+export PATH="$HOME/workspace/anaconda/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh

@@ -276,35 +276,29 @@ end
 
 function addtoplaylist(playlist) 
   playlist = playlist:gsub ("^%/*","/")
-  file = io.open ( playlist ,  "a+" )
-  cwd  =   utils.getcwd() .. "/"
-  filename = mp.get_property("filename")
+  -- cwd  =   utils.getcwd() 
+  -- filename = mp.get_property("filename")
   path = mp.get_property("path")
-  common , _ ,  _   = rel_path ( cwd , path)
-  if string.sub(path,1,1) == "/" then
-    full_path = path
-  else
-    full_path    = cwd .. path:sub(#common + 1 ,#path)
-  end
-  nowplaying_dir,_= utils.split_path(full_path)
-  playlist_dir , _ = utils.split_path (playlist)
-  _ , line , count = rel_path (playlist_dir , utils.split_path(full_path))
-  line = line .. nowplaying_dir:sub(count,#nowplaying_dir) .. filename
-  line = line:gsub("^%/","")
-  file = io.open (playlist,"a+")
-  -- text = "cwd      = " .. cwd .. "\n" 
+  common , diff ,  _   = rel_path ( playlist , path)
+  -- text = "playlist = " .. playlist .. "\n"
+  --     .. "cwd      = " .. cwd .. "\n" 
   --     .. "filename = " .. filename .. "\n"
   --     .. "path     = " .. path .. "\n"
   --     .. "common   = " .. common .. "\n"
-  --     -- .. "nowplaying = join    " .. nowplaying .. "\n"
-  --     -- .. "nowplaying_dir       " .. nowplaying_dir  ..  "\n" 
-  --     .. "playlist_dir         " .. playlist_dir .. "\n"
-  --     -- .. " playlist            " .. playlist .. "\n"
-  --     .. "line     = " .. line .. "\n"
-  --     .. "full_path= " .. full_path .. "\n"
-  --   print (text)
-  file:write(line,"\n")  
-  path = playlist_dir
+  --     .. "diff     = " .. diff .. "\n"
+  --     .. "j        = " .. j .. "\n"
+  --     .. "n        = " .. #common .. "\n"
+  --     .. "line     = " .. diff .. path:sub(j,#path) .. "\n"
+      -- .. "nowplaying = join    " .. nowplaying .. "\n"
+      -- .. "nowplaying_dir       " .. nowplaying_dir  ..  "\n" 
+      -- .. "playlist_dir         " .. playlist_dir .. "\n"
+      -- .. " playlist            " .. playlist .. "\n"
+  -- print (text)
+  line = diff .. path:sub(j,#path)
+  file = io.open ( playlist ,  "a+" )
+  file:write(line,"\n")
+  path , _ = utils.split_path(playlist)  
+  -- path = playlist_dir
   -- handler(true)
 end
 
