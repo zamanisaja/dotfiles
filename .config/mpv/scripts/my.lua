@@ -279,7 +279,7 @@ function addtoplaylist(playlist)
   -- cwd  =   utils.getcwd() 
   -- filename = mp.get_property("filename")
   path = mp.get_property("path")
-  common , diff ,  _   = rel_path ( playlist , path)
+  common , diff ,  j   = rel_path ( playlist , path)
   -- text = "playlist = " .. playlist .. "\n"
   --     .. "cwd      = " .. cwd .. "\n" 
   --     .. "filename = " .. filename .. "\n"
