@@ -1,21 +1,9 @@
-# pip zsh completion start
-function _pip_completion {
-  local words cword
-  read -Ac words
-  read -cn cword
-  reply=( $( COMP_WORDS="$words[*]" \
-             COMP_CWORD=$(( cword-1 )) \
-             PIP_AUTO_COMPLETE=1 $words[1] ) )
-}
-compctl -K _pip_completion pip
-# pip zsh completion end
-
 zstyle ':completion:*:*:mpv:*' tag-order '!urls'
-
 
 # If you come from bash you might have to change your $PATH.
 
-export PATH="$HOME/workspace/bin/bin:/usr/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH"
+export PATH="/usr/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+export PATH="$HOME/workspace/bin/bin:$PATH"
 export PATH="$HOME/workspace/anaconda/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
