@@ -25,12 +25,12 @@ function moonphase(){
 }
 
 function subfa(){
-if [[ "$11" == "" ]]; then
+if [[ "$1" == "" ]]; then
     printf "Use like this:\nsubfa file.srt\n" 
 else
     iconv -f "cp1256" -t "utf-8" "$1" -o tmpsub.srt
-    name=$(sed 's/.srt//' "$1")
-    mv tmpsub.srt "$name-fa.srt"
+    name=$(echo "$1" | sed 's/.srt//')
+    mv tmpsub.srt "$name.srt"
 fi
 }
 
