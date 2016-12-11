@@ -17,7 +17,7 @@ function weather(){
 	 	else
 	 	LOCATION="$1"	
 	 fi
-	  curl -3 "http://wttr.in/$LOCATION"
+	  curl -3 "http://wttr.in/$LOCATION?m"
 }
 function moonphase(){
         curl http://wttr.in/Moon
