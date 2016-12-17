@@ -31,16 +31,11 @@ function os.capture(cmd, raw)
 end
 
 function show_info(  )
+    -- mp.command("show-progress")
     mp.osd_message(stripfile(mp.get_property('filename')),4)
 end
 
 function stripfile(pathfile)
-  -- index = string.find(pathfile, "/[^/]*$")
-  -- if index ~= nil then
-  --   pathfile = string.sub(pathfile,1,index)
-  -- end
-  -- print ("index= " .. tostring(index))
-  -- print ("stripfile:  " .. tostring(pathfile))
   if pathfile == nil  then return "." end
     local tmp = pathfile
     if filename_replace then
@@ -137,7 +132,7 @@ function scanplaylist(  )
     if string.match(items[i] , ".srt") then
         items[i] = ""
     end
-    print (items[i])
+    -- print (items[i])
   end
   return items,n
 end
@@ -276,35 +271,22 @@ end
 
 function addtoplaylist(playlist) 
   playlist = playlist:gsub ("^%/*","/")
-  -- cwd  =   utils.getcwd() 
-  -- filename = mp.get_property("filename")
-  path = mp.get_property("path")
+  path = mp.get_property("working-directory") .. "/" .. mp.get_property("path")
   common , diff ,  j   = rel_path ( playlist , path)
+  line = diff .. path:sub(j,#path)
   -- text = "playlist = " .. playlist .. "\n"
-  --     .. "cwd      = " .. cwd .. "\n" 
-  --     .. "filename = " .. filename .. "\n"
   --     .. "path     = " .. path .. "\n"
   --     .. "common   = " .. common .. "\n"
   --     .. "diff     = " .. diff .. "\n"
   --     .. "j        = " .. j .. "\n"
-  --     .. "n        = " .. #common .. "\n"
-  --     .. "line     = " .. diff .. path:sub(j,#path) .. "\n"
-      -- .. "nowplaying = join    " .. nowplaying .. "\n"
-      -- .. "nowplaying_dir       " .. nowplaying_dir  ..  "\n" 
-      -- .. "playlist_dir         " .. playlist_dir .. "\n"
-      -- .. " playlist            " .. playlist .. "\n"
+  --     .. "line     = " .. line .. "\n"
   -- print (text)
-  line = diff .. path:sub(j,#path)
   file = io.open ( playlist ,  "a+" )
   file:write(line,"\n")
   path , _ = utils.split_path(playlist)  
-  -- path = playlist_dir
-  -- handler(true)
 end
 
 function rel_path( path_start , path_dest )
-    -- print ("path_start: " .. path_start)
-    -- print ("path_dest:  "..  path_dest)
   m = math.max(unpack({#path_start,#path_dest}))
   local i = 1
   local common = ""
@@ -312,7 +294,7 @@ function rel_path( path_start , path_dest )
         common = common .. path_dest:sub(i,i)
         i = i+1 
     end 
-  _, count = string.gsub(path_dest:sub(i,#path_dest),"%/","")
+  _, count = string.gsub(path_start:sub(i,#path_start),"%/","")
   local line = ""
   for j=1,count-1 do line = line .. "../" end
   return common , line, i
@@ -329,7 +311,7 @@ mp.add_forced_key_binding("ctrl+ENTER", "nowplayintmode", open_nowplaying)
 mp.add_forced_key_binding("a", "add", add)
 mp.add_forced_key_binding("d", "delete", deletefromnowplaying, "repeatable")
 
-mp.add_forced_key_binding("Ctrl+s", "save", save_playlist)
+-- mp.add_forced_key_binding("Ctrl+s", "save", save_playlist)
 
 mp.add_forced_key_binding("J", "navdownfast", navdownfast, "repeatable")
 mp.add_forced_key_binding("K", "navupfast", navupfast, "repeatable")
