@@ -67,16 +67,18 @@ function swap(){
 }
 
 
-function mpd(){
-    if [ -e "/tmp/mpd.fifo" ]; then
-        ncmpcpp 
-        mpdscribble
-    else
-        /usr/bin/mpd -v
-        mpc update
-        ncmpcpp
-    fi
-}
+# function mpd(){
+#     if [ -e "/tmp/mpd.fifo" ]; then
+#         ncmpcpp 
+#         mpdscribble
+#     else
+#         /usr/bin/mpd -v
+#         mpc update
+#         ncmpcpp
+#     fi
+# }
+
+alias mpd="ncmpcpp"
 
 mpi(){
     if [[ $@ == "-p 6700" ]]; then

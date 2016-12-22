@@ -153,11 +153,11 @@ def_key "k"
 def_key "j"
   move_selected_items_down
 #
-#def_key "["
-#  scroll_up_album
+def_key "["
+  move_home
 #
-#def_key "]"
-#  scroll_down_album
+def_key "]"
+    move_end
 #
 #def_key "{"
 #  scroll_up_artist
@@ -198,9 +198,8 @@ def_key "d"
 #def_key "right"
 #  volume_up
 #
-#def_key "+"
-#  volume_up
-#
+def_key "+"
+  volume_up
 #def_key "ctrl-h"
 #  previous_column
 #
@@ -230,38 +229,12 @@ def_key "d"
 #
 def_key "2"
   show_playlist_editor
-#  show_browser
-#
 def_key "3"
   show_media_library
-#  change_browse_mode
-#
-#def_key "3"
-#  show_search_engine
-#
-#def_key "3"
-#  reset_search_engine
-#
 def_key "4"
    show_search_engine
-#  show_media_library
-#
-#def_key "4"
-#  toggle_media_library_columns_mode
-#
 def_key "5"
     show_browser    
-#  show_playlist_editor
-#
-#def_key "6"
-#  show_tag_editor
-#
-#def_key "7"
-#  show_outputs
-#
-#def_key "8"
-#  show_visualizer
-#
 def_key "="
     volume_up
 #def_key "@"
@@ -367,16 +340,12 @@ def_key "?"
 #
 #def_key "?"
 #  find
-#
-#
 def_key "."
    seek_forward 
 #  next_found_item
 #
 def_key ","
    seek_backward
-
-
 #  previous_found_item
 #
 #def_key "w"
@@ -437,8 +406,8 @@ def_key "a"
 #def_key "C"
 #  crop_main_playlist
 #
-#def_key "m"
-#  move_sort_order_up
+def_key "K"
+  move_sort_order_up
 #
 #def_key "m"
 #  move_selected_items_up
@@ -446,19 +415,10 @@ def_key "a"
 #def_key "m"
 #  toggle_media_library_sort_mode
 #
-#def_key "n"
-#  move_sort_order_down
-#
-#def_key "n"
-#  move_selected_items_down
-#
-#def_key "M"
-#  move_selected_items_to
-#
+def_key "J"
+  move_sort_order_down
 def_key "A"
   add_selected_items
-#  add
-#
 #def_key "S"
 #  save_playlist
 #
