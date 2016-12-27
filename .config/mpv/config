@@ -7,7 +7,6 @@ screenshot-directory="/home/saja/New/Pictures/"
 screenshot-jpeg-quality=100
 ontop
 
-script="/home/saja/.config/mpv/trakt.lua"
 msg-level=sub=no,ffmpeg/audio=no,vo/opengl/x11=error,trakt=no
 
 save-position-on-quit

@@ -12,7 +12,7 @@ function start_to_traktpy(  )
         if duration == nil then
             return -1
         end
-        print ( "------------" .. traktpy .. " --path ".. dir .. " --file " .. filename .. " --progress " .. percentage.. " --command" .. " play " .. "--duration" .. duration)
+        print ( traktpy .. " --path ".. dir .. " --file " .. filename .. " --progress " .. percentage .. " --command" .. " play " .. "--duration " .. duration)
         t = {}
         t.args = {traktpy , "--path", dir , "--file" , filename , "--progress", percentage, "--command" ,"play" , "--duration" ,duration}
         res = mputils.subprocess(t) 
