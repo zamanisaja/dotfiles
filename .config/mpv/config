@@ -6,7 +6,6 @@ input-file=/home/saja/.config/mpv/fifo
 screenshot-directory="/home/saja/New/Pictures/"
 screenshot-jpeg-quality=100
 ontop
-
 msg-level=sub=no,ffmpeg/audio=no,vo/opengl/x11=error,trakt=no
 
 save-position-on-quit
@@ -27,9 +26,7 @@ autofit=30%x30%
 osd-font-size=30
 osd-playing-msg='${filename}'
 osd-duration="2000"
-
 reset-on-next-file=pause,ontop
-
 script-opts=osc-scalewindowed=0.8
 script-opts=osc-scalefullscreen=0.8
 #script-opts=osc-valign=0.8
@@ -62,10 +59,9 @@ script="/home/saja/.config/mpv/trakt.lua"
 
 [pseudo-gui]
 vo=opengl
-# ontop
 force-window=yes
 idle=once
-script=/home/saja/.config/mpv/autoload.lua,/home/saja/.config/mpv/trakt.lua,/home/saja/.config/mpv/scripts/ontop-playback.lua
+script=/home/saja/.config/mpv/autoload.lua,/home/saja/.config/mpv/trakt.lua
 
 [load-vol]
 ao=alsa:resample=no
