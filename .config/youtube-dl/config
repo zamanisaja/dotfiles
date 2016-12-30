@@ -7,7 +7,7 @@
 --no-overwrites
 
 
---output '(%(upload_date)s)-%(uploader)s-%(title)s-(%(id)s).%(ext)s'
+--output '%(uploader)s-%(title)s-(%(id)s).%(ext)s'
 --restrict-filenames 
 
 
