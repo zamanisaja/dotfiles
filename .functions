@@ -82,7 +82,7 @@ alias mpd="ncmpcpp"
 
 mpi(){
     if [[ $@ == "-p 6700" ]]; then
-        command ncmpcpp -h $PI --config ~/.ncmpcpp/config3 -p 6700
+        command ncmpcpp -h $PI --config ~/.ncmpcpp/config
     else
         command ncmpcpp -h $PI --config ~/.ncmpcpp/config2 "$@"
     fi
