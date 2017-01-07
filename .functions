@@ -21,7 +21,6 @@ function weather(){
 }
 function moonphase(){
         curl http://wttr.in/Moon
-
 }
 
 function subfa(){
@@ -66,18 +65,6 @@ function swap(){
         mv "$TMPFILE" "$SECFILE"
 }
 
-
-# function mpd(){
-#     if [ -e "/tmp/mpd.fifo" ]; then
-#         ncmpcpp 
-#         mpdscribble
-#     else
-#         /usr/bin/mpd -v
-#         mpc update
-#         ncmpcpp
-#     fi
-# }
-
 alias mpd="ncmpcpp"
 
 mpi(){
@@ -102,7 +89,7 @@ function csvpreview(){
 #Aliases
 alias ls='ls --color'
 alias l='ls'
-alias sudo='nocorrect sudo '
+# alias sudo='nocorrect sudo '
 alias jcal="jcal -p"
 # alias grep="grep -Hn"
 alias nemo="nemo ."

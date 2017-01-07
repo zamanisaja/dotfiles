@@ -1,13 +1,38 @@
 zstyle ':completion:*:*:mpv:*' tag-order '!urls'
 
+export ADOTDIR="$HOME/.zsh/antigen-cache"
+source ~/.zsh/antigen/antigen.zsh
+
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
+#
+# # Bundles from the default repo (robbyrussell's oh-my-zsh).
+antigen bundle git
+antigen bundle pip
+# antigen bundle rg3/youtube-dl
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle $HOME/.zsh/plugins/docker-machine
+#
+# Syntax highlighting bundle.
+# antigen bundle zsh-users/zsh-syntax-highlighting
+#
+# # Load the theme.
+# antigen theme robbyrussell
+#
+# # Tell antigen that you're done.
+antigen apply
+
+
+
+
 # If you come from bash you might have to change your $PATH.
 
 export PATH="/usr/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 export PATH="$HOME/workspace/bin/bin:$PATH"
-export PATH="$HOME/workspace/anaconda3/bin:$PATH"
+# export PATH="$HOME/workspace/anaconda3/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+export ZSH=$HOME/.zsh/oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -85,10 +110,15 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 #
-PROMPT="${ret_status} %{$fg[cyan]%}%c%{$reset_color%} "
-# PROMPT="${ret_status} %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)"
 
 source ~/.functions
 unsetopt share_history
 setopt no_share_history
 HISTFILE=$HOME/.history
+
+
+
+
+
+PROMPT="${ret_status} %{$fg[cyan]%}%c%{$reset_color%} "
+# PROMPT="${ret_status} %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)"
