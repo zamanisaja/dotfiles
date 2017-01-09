@@ -65,7 +65,19 @@ function swap(){
         mv "$TMPFILE" "$SECFILE"
 }
 
-alias mpd="ncmpcpp"
+# alias mpd="ncmpcpp"
+function mpd(){
+mpc > /dev/null 2>&1
+if [ $? -ne 0 ] 
+    then
+    /usr/bin/mpd -v 
+    mpc update > /dev/null 2>&1
+    mpdscribble
+    ncmpcpp
+else
+    ncmpcpp
+fi
+}
 
 mpi(){
     if [[ $@ == "-p 6700" ]]; then
