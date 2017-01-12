@@ -21,6 +21,7 @@ function shift_del()
     filename = mp.get_property("path")
     t = {}
     name = filename:gsub ('%..*$' , '')
+    mp.osd_message("deleting file " .. name , 5)
     t.args = {"rm" , filename , name .. ".en." .. "srt", name .. ".es." .. "srt", name .. ".fa." .. "srt" }
     res = mputils.subprocess(t)
 end
