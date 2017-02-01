@@ -8,7 +8,8 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-" Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
+Plugin 'flazz/vim-colorschemes'
 " Plugin 'davidhalter/jedi-vim'
 " Bundle 'djoshea/vim-autoread'
 " Plugin 'klen/python-mode'
@@ -18,7 +19,7 @@ Plugin 'VundleVim/Vundle.vim'
 "  
 " Plugin 'rdnetto/YCM-Generator'
 " Plugin 'scrooloose/nerdtree'
-" Plugin 'altercation/vim-colors-solarized'
+Plugin 'altercation/vim-colors-solarized'
 " Plugin 'Valloric/YouCompleteMe'
 " Plugin 'scrooloose/syntastic'
 " Plugin 'aperezdc/vim-template'
