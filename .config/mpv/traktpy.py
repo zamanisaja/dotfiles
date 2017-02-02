@@ -177,7 +177,7 @@ def parse_options():
             progress = 100 * (1 - (endtime - time.time()) / duration )
             if now > ( endtime + 10 ) or progress < 93:
                 os.remove(tmpfile)
-                exit (-1)
+                # exit (-1)
             send_notify ( movie_info['title'] ,movie_info['year'] +  str(progress))
             Trakt['scrobble'].stop(movie=movie_info,progress=progress)
         elif media_type == "episode" :
@@ -189,7 +189,7 @@ def parse_options():
             progress = 100 * (1 - (endtime - now) / duration )
             if now > (endtime + 10 ) or progress < 93:
                 os.remove(tmpfile)
-                exit (-1)
+                # exit (-1)
             send_notify ( show_info['title'] , "Season " + episode_info['season'] + " - Episode " + episode_info['number'] + " --> %" + str(progress))
             Trakt['scrobble'].stop(show=show_info,episode=episode_info,progress=progress)
 
