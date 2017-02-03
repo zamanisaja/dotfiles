@@ -5,6 +5,7 @@ export DOWNLOADS="$HOME/New/Downloads"
 export MOBILE=192.168.1.143
 export TABLET=192.168.1.141:5555
 export GOPATH="$HOME/workspace/go"
+POWERLINE_CONFIG_COMMAND="/usr/bin/powerline-config"
 export PI=192.168.1.135
 
 function rainbow(){
