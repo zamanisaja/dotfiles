@@ -19,6 +19,7 @@ Plugin 'flazz/vim-colorschemes'
 "  
 " Plugin 'rdnetto/YCM-Generator'
 " Plugin 'scrooloose/nerdtree'
+" Plugin 'benmills/vimux'
 Plugin 'altercation/vim-colors-solarized'
 " Plugin 'Valloric/YouCompleteMe'
 " Plugin 'scrooloose/syntastic'
