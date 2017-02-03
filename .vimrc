@@ -9,10 +9,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
-<<<<<<< HEAD
-=======
 Plugin 'flazz/vim-colorschemes'
->>>>>>> e2cc28c761305d13e328923f4dde8802431b26f3
 " Plugin 'davidhalter/jedi-vim'
 " Bundle 'djoshea/vim-autoread'
 " Plugin 'klen/python-mode'
@@ -22,6 +19,7 @@ Plugin 'flazz/vim-colorschemes'
 "  
 " Plugin 'rdnetto/YCM-Generator'
 " Plugin 'scrooloose/nerdtree'
+" Plugin 'benmills/vimux'
 Plugin 'altercation/vim-colors-solarized'
 " Plugin 'Valloric/YouCompleteMe'
 " Plugin 'scrooloose/syntastic'
