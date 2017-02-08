@@ -39,6 +39,7 @@ call vundle#end()
 let g:ycm_global_ycm_extra_conf = ''
 filetype plugin indent on   
 
+set nrformats=alpha,bin,octal,hex
 set number
 syntax on
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
