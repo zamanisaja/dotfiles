@@ -3,6 +3,8 @@
 
 def_key "ض"
   quit
+def_key "Q"
+  quit
 def_key "1"
   show_playlist
 def_key "2"
