@@ -17,5 +17,4 @@
 
 # --netrc
 
---download-archive "~/.config/youtube-dl/archive.txt"
 --cookie '~/.config/youtube-dl/cookie.txt'
