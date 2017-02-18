@@ -131,5 +131,10 @@
   <Action shortcut="Alt+3; Ctrl+3" name="mouse_toggle_annotate"/>
   <Action shortcut="" name="mouse_zoom"/>
   <Action shortcut="Ctrl+\" name="show_leftpanel"/>
+  <Action shortcut="Ctrl+/" name="show_bottombar"/>
+  <Action shortcut="Shift+Down; Shift+J" name="view_scroll_down"/>
+  <Action shortcut="Shift+Up; Shift+K" name="view_scroll_up"/>
+  <Action shortcut="Space; L" name="view_scroll_page_down"/>
+  <Action shortcut="Shift+Space; H" name="view_scroll_page_up"/>
  </ActionProperties>
 </kpartgui>
