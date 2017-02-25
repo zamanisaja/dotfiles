@@ -15,9 +15,10 @@
 	"font_size": 19,
 	"ignored_packages":
 	[
-		"Jedi - Python autocompletion"
+		"Jedi - Python autocompletion",
+		"Seti_UX"
 	],
-	"theme": "Seti_orig.sublime-theme",
+	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"update_check": false,
 	"word_wrap": "show"
