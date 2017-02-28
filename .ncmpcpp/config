@@ -324,7 +324,7 @@ song_window_title_format = "{%a - }{%t}|{%f}"
 #
 # lyrics_database = "1"
 #
-external_editor = "/usr/bin/xed"
+external_editor = "/usr/bin/subl"
 #
 #use_console_editor = "no" (set to yes, if your editor is console app)
 #
