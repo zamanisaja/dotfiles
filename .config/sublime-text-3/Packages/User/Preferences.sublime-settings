@@ -15,8 +15,7 @@
 	"font_size": 19,
 	"ignored_packages":
 	[
-		"Jedi - Python autocompletion",
-		"Seti_UX"
+		"Jedi - Python autocompletion"
 	],
 	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": true,
