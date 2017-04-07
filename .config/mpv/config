@@ -55,6 +55,7 @@ no-video
 profile=audio
 
 [trakt]
+# profile=pseudo-gui
 script="/home/saja/.config/mpv/trakt.lua"
 
 [pseudo-gui]
