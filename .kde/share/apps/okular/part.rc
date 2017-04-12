@@ -134,7 +134,7 @@
   <Action shortcut="Ctrl+/" name="show_bottombar"/>
   <Action shortcut="Shift+Down; Shift+J" name="view_scroll_down"/>
   <Action shortcut="Shift+Up; Shift+K" name="view_scroll_up"/>
-  <Action shortcut="Space; L" name="view_scroll_page_down"/>
-  <Action shortcut="Shift+Space; H" name="view_scroll_page_up"/>
+  <Action shortcut="Space; H" name="view_scroll_page_down"/>
+  <Action shortcut="Shift+Space; L" name="view_scroll_page_up"/>
  </ActionProperties>
 </kpartgui>
