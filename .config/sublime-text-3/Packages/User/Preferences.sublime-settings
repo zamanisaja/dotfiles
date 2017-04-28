@@ -12,7 +12,11 @@
 	],
 	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"default_encoding": "UTF-16",
+<<<<<<< HEAD
 	"font_size": 16,
+=======
+	"font_size": 14,
+>>>>>>> 6cc93529c8d31d5c6cc4b54758234ae60a2c449d
 	"ignored_packages":
 	[
 		"Jedi - Python autocompletion"
