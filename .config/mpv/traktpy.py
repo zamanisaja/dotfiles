@@ -1,4 +1,4 @@
-#! /usr/bin/python2.7
+#! /usr/bin/python
 # /usr/bin/env python
 import ast
 from trakt import Trakt
@@ -32,7 +32,7 @@ def send_notify(title,text):
 
 def get_access(config_file):
     res = Trakt['oauth/device'].code()
-    raw_input ("Visit %s and put the code \"%s\" Then enter\n" % (res['verification_url'] , res['user_code']) )
+    input ("Visit %s and put the code \"%s\" Then enter\n" % (res['verification_url'] , res['user_code']) )
     authorization = Trakt['oauth/device'].token(res['device_code'])
     f = open (config_file , "w")
     f.write(str(authorization))
@@ -178,7 +178,7 @@ def parse_options():
             if now > ( endtime + 10 ) or progress < 93:
                 os.remove(tmpfile)
                 # exit (-1)
-            send_notify ( movie_info['title'] ,movie_info['year'] +  str(progress))
+            send_notify ( movie_info['title'] ,movie_info['year'] + "  " +  str(progress))
             Trakt['scrobble'].stop(movie=movie_info,progress=progress)
         elif media_type == "episode" :
             episode_info = ast.literal_eval(f.readline().strip("\n"))
