@@ -156,11 +156,11 @@ def_key "."
 #  reverse_playlist
 #
 #  apply_filter
+#def_key "?"
+#  next_found_item
 
 #
 
-def_key "/"
- apply_filter
 #find_item_forward 
 def_key "?"
   next_found_item

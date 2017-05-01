@@ -102,6 +102,7 @@ function csvpreview(){
 #Aliases
 alias ls='ls --color'
 alias l='ls'
+alias vi='vim'
 # alias sudo='nocorrect sudo '
 alias jcal="jcal -p"
 # alias grep="grep -Hn"
