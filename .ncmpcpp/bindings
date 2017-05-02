@@ -24,9 +24,9 @@ def_key "K"
   move_selected_items_up
 def_key "J"
   move_selected_items_down
-def_key "ctrl_j"
+def_key "ctrl-j"
   move_sort_order_down
-def_key "ctrl_k"
+def_key "ctrl-k"
   move_sort_order_up
 
 def_key "["
