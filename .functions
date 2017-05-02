@@ -125,7 +125,7 @@ alias cp="cp -i -r"
 alias mv="mv -i"
 alias ytdl="ytdl -b"
 alias subliminal="subliminal download -l en -l fa -l es"
-alias mountsaja="sshfs pi:/media/Saja/ /media/Saja"
+# alias mountsaja="sshfs pi:/media/Saja/ /media/Saja"
 
 eval "$(thefuck --alias)"
 eval "$(thefuck --alias FUCK)"
