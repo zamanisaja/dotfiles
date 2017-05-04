@@ -1,5 +1,4 @@
 #! /usr/bin/python
-# /usr/bin/env python
 import ast
 from trakt import Trakt
 import getopt
@@ -32,7 +31,10 @@ def send_notify(title,text):
 
 def get_access(config_file):
     res = Trakt['oauth/device'].code()
-    input ("Visit %s and put the code \"%s\" Then enter\n" % (res['verification_url'] , res['user_code']) )
+    if sys.version.startswith("3"):
+        input ("Visit %s and put the code \"%s\" Then enter\n" % (res['verification_url'] , res['user_code']) )
+    else:
+        raw_input ("Visit %s and put the code \"%s\" Then enter\n" % (res['verification_url'] , res['user_code']) )
     authorization = Trakt['oauth/device'].token(res['device_code'])
     f = open (config_file , "w")
     f.write(str(authorization))
