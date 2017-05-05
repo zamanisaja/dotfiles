@@ -127,7 +127,7 @@
   <Action shortcut="Ctrl+1; Alt+1" name="mouse_drag"/>
   <Action shortcut="" name="mouse_magnifier"/>
   <Action shortcut="" name="mouse_select"/>
-  <Action shortcut="Ctrl+2; Alt+2" name="mouse_textselect"/>
+  <Action shortcut="Ctrl+2; Alt+2" priority="0" name="mouse_textselect"/>
   <Action shortcut="Alt+3; Ctrl+3" name="mouse_toggle_annotate"/>
   <Action shortcut="" name="mouse_zoom"/>
   <Action shortcut="Ctrl+\" name="show_leftpanel"/>
