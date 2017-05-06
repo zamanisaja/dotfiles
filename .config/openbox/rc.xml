@@ -259,6 +259,31 @@
     <keybind key="W-z">
       <action name="Iconify"/>
     </keybind>
+    <keybind key="W-1">
+        <action name="Execute">
+            <command>/home/saja/workspace/bin/bin/WM.sh --chrome</command>
+     </action>
+    </keybind>
+    <keybind key="W-2">
+        <action name="Execute">
+            <command>/home/saja/workspace/bin/bin/WM.sh --konsole</command>
+     </action>
+    </keybind>
+    <keybind key="W-3">
+        <action name="Execute">
+            <command>/home/saja/workspace/bin/sublime_text_3/sublime_text</command>
+     </action>
+    </keybind>
+    <keybind key="W-4">
+        <action name="Execute">
+            <command>/home/saja/workspace/bin/bin/WM.sh --mpv</command>
+     </action>
+    </keybind>
+    <keybind key="W-`">
+        <action name="Execute">
+            <command>/home/saja/workspace/bin/bin/WM.sh --okular</command>
+     </action>
+    </keybind>
     <!-- Keybindings for windows -->
     <keybind key="A-F4">
       <action name="Close"/>
