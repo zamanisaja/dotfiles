@@ -65,7 +65,7 @@ idle=once
 script=/home/saja/.config/mpv/autoload.lua,/home/saja/.config/mpv/trakt.lua
 
 [load-vol]
-ao=alsa:resample=no
+#ao=alsa:resample=no
 #audio-display=no
 
 [audio]

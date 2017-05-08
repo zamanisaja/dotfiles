@@ -247,7 +247,7 @@ user_interface = "alternative" (classic/alternative)
 #
 default_find_mode = "normal" (wrapped/normal)
 #
-default_space_mode = "add" (add/select)
+# default_space_mode = "add" (add/select)
 #
 #default_tag_editor_left_col = "albums" (albums/dirs)
 #
