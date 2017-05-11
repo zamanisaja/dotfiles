@@ -1,5 +1,7 @@
 set nocompatible
-:set autoread
+
+" Auto reload file on change
+set autoread
 
 
 filetype off
@@ -14,7 +16,7 @@ Plugin 'flazz/vim-colorschemes'
 " Bundle 'djoshea/vim-autoread'
 " Plugin 'klen/python-mode'
 " Plugin 'jistr/vim-nerdtree-tabs'
-" 
+" Plugin 'junegunn/vim-easy-align' 
 " Plugin 'lervag/vimtex'
 "  
 " Plugin 'rdnetto/YCM-Generator'
@@ -39,9 +41,21 @@ call vundle#end()
 let g:ycm_global_ycm_extra_conf = ''
 filetype plugin indent on   
 
-set nrformats=alpha,bin,octal,hex
 set number
 syntax on
+
+" Number Formats
+set nrformats=alpha,bin,octal,hex
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+
+" Highlight Search
+" set hlsearch
 set hls
+" set nohlsearch
+
+" Ignore Case
 set ic
+" set noic
+
+
+map <C-\> :NERDTreeToggle<CR>
