@@ -12,7 +12,7 @@ ncmpcpp_directory = "/home/saja/.ncmpcpp"
 #
 mpd_port = "6600"
 #
-mpd_music_dir = "/home/saja/Music/"
+mpd_music_dir = "/media/Saja/Music/"
 #
 mpd_connection_timeout = "5"
 #
