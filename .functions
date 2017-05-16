@@ -126,6 +126,8 @@ alias mv="mv -i"
 alias ytdl="ytdl -b"
 alias subliminal="subliminal download -l en -l fa -l es"
 alias mountsaja="sshfs pi:/media/Saja/ /media/Saja"
+alias dateNY='TZ=":America/New_York" date'
+alias dateLA='TZ=":America/Los_Angeles" date'
 
 # eval "$(thefuck --alias)"
 # eval "$(thefuck --alias FUCK)"
