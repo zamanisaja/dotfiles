@@ -2,7 +2,7 @@ State=AAAA/wAAAAD9AAAAAAAABVYAAAKfAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG
 Window-Maximized 768x1366=true
 
 [Desktop Entry]
-FullScreen=true
+FullScreen=false
 shouldShowMenuBarComingFromFullScreen=false
 shouldShowToolBarComingFromFullScreen=true
 
@@ -26,21 +26,9 @@ ToolButtonStyle=IconOnly
 File1[$e]=$HOME/Documents/Read/beginning Qt.pdf
 File2[$e]=$HOME/Documents/Read/TheultimateHitchhikersGuide.epub
 File3[$e]=$HOME/Documents/Read/comsol/COMSOLJavaAPIReferenceGuide.pdf
-File4[$e]=$HOME/New/Downloads/بخشنامه اداره کل.pdf
-File5[$e]=$HOME/New/Downloads/بخشنامه وزارتی.pdf
-File6[$e]=$HOME/New/Downloads/جدول توزیع سهمیه.pdf
-File7[$e]=$HOME/New/Downloads/فرم اطلاعات فردی.pdf
-File8[$e]=$HOME/New/Downloads/فرم تعهد.JPG
-File9[$e]=$HOME/New/Downloads/_فرم درخواست ثبت نام داواطلبين سرباز معلم.pdf
 Name1[$e]=beginning Qt.pdf
 Name2[$e]=TheultimateHitchhikersGuide.epub
 Name3[$e]=COMSOLJavaAPIReferenceGuide.pdf
-Name4[$e]=بخشنامه اداره کل.pdf
-Name5[$e]=بخشنامه وزارتی.pdf
-Name6[$e]=جدول توزیع سهمیه.pdf
-Name7[$e]=فرم اطلاعات فردی.pdf
-Name8[$e]=فرم تعهد.JPG
-Name9[$e]=_فرم درخواست ثبت نام داواطلبين سرباز معلم.pdf
 
 [Toolbar mainToolBar]
 ToolButtonStyle=IconOnly

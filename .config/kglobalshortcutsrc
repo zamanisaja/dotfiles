@@ -30,8 +30,10 @@ display=Display\tMeta+P,Display\tMeta+P,Switch Display
 [khotkeys]
 _k_friendly_name=KDE Daemon
 {035e9d08-422f-4627-9945-43f2c2c39e10}=Meta+4,none,mpv
+{0719c735-cb32-46d2-a0da-1484c4d155a6}=Meta+F10,none,Reset_kwin
 {13cabe53-20d9-4ee7-9489-8dcf9c07789b}=Shift+Print,none,Take Active Window Screenshot
 {1ae8e535-144c-4147-8a34-f6cdf0499218}=Meta+1,none,Chromium
+{29744487-e0bb-4ea9-b819-1f88384b8779}=Meta+T,none,telegeram
 {2cf0b896-1f90-4ff1-8970-0ec4a8381b76}=Meta+2,none,Konsole
 {2f8dfbf1-f222-4c57-b2cb-b70ca2aa4071}=Meta+3,none,sublime
 {4db91f9a-844f-44d9-9555-f67461088677}=,none,Start Screenshot Tool
