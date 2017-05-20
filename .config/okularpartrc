@@ -3,7 +3,6 @@ ShellOpenFileInTabs=true
 
 [Main View]
 ShowBottomBar=false
-ShowLeftPanel=false
 SplitterSizes=252,849
 
 [Nav Panel]

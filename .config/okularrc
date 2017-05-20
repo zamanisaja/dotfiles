@@ -14,10 +14,11 @@ Recent URLs[$e]=file:$HOME/Documents/Read/comsol/
 Height 640=640
 Height 768=768
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAABVYAAAMAAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAABVYAAAK9AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 Width 1138=1138
 Width 1366=1366
+Window-Maximized 768x1366=true
 
 [MainWindow][Toolbar mainToolBar]
 ToolButtonStyle=IconOnly
@@ -26,9 +27,11 @@ ToolButtonStyle=IconOnly
 File1[$e]=$HOME/Documents/Read/beginning Qt.pdf
 File2[$e]=$HOME/Documents/Read/TheultimateHitchhikersGuide.epub
 File3[$e]=$HOME/Documents/Read/comsol/COMSOLJavaAPIReferenceGuide.pdf
+File4[$e]=$HOME/Documents/Read/The_Linux_Command_Line_A_Complete_Introduction.pdf
 Name1[$e]=beginning Qt.pdf
 Name2[$e]=TheultimateHitchhikersGuide.epub
 Name3[$e]=COMSOLJavaAPIReferenceGuide.pdf
+Name4[$e]=The_Linux_Command_Line_A_Complete_Introduction.pdf
 
 [Toolbar mainToolBar]
 ToolButtonStyle=IconOnly
