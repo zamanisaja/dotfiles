@@ -28,7 +28,7 @@ _k_friendly_name=Power Management
 display=Display\tMeta+P,Display\tMeta+P,Switch Display
 
 [khotkeys]
-_k_friendly_name=KDE Daemon
+_k_friendly_name=System Settings
 {035e9d08-422f-4627-9945-43f2c2c39e10}=Meta+4,none,mpv
 {0719c735-cb32-46d2-a0da-1484c4d155a6}=Meta+F10,none,Reset_kwin
 {13cabe53-20d9-4ee7-9489-8dcf9c07789b}=Shift+Print,none,Take Active Window Screenshot
