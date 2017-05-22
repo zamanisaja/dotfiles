@@ -1115,6 +1115,9 @@ Key=Meta+`
 Type=SHORTCUT
 Uuid={9eba5493-1285-41f1-b255-f4044b320467}
 
+[General]
+BrowserApplication[$d]
+
 [Gestures]
 Disabled=true
 MouseButton=2
@@ -1124,10 +1127,19 @@ Timeout=300
 Comment=
 WindowsCount=0
 
+[KDE]
+ShowDeleteCommand[$d]
+
 [Main]
 AlreadyImported=defaults,spectacle,kde32b1,konqueror_gestures_kde321
 Disabled=false
 Version=2
+
+[Notification Messages]
+:confirmNewSession[$d]
+
+[PreviewSettings]
+UseFileThumbnails[$d]
 
 [Voice]
 Shortcut=
