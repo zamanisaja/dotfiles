@@ -64,6 +64,12 @@ force-window=yes
 idle=once
 script=/home/saja/.config/mpv/autoload.lua,/home/saja/.config/mpv/trakt.lua
 
+[protocol.http]
+no-resume-playback
+
+[protocol.https]
+no-resume-playback
+
 [load-vol]
 #ao=alsa:resample=no
 #audio-display=no
