@@ -261,27 +261,27 @@
     </keybind>
     <keybind key="W-1">
         <action name="Execute">
-            <command>/home/saja/workspace/bin/bin/WM.sh --chrome</command>
+            <command>/home/saja/workspace/bin/bin/WM.sh -1 </command>
      </action>
     </keybind>
     <keybind key="W-2">
         <action name="Execute">
-            <command>/home/saja/workspace/bin/bin/WM.sh --konsole</command>
+            <command>/home/saja/workspace/bin/bin/WM.sh -2 </command>
      </action>
     </keybind>
     <keybind key="W-3">
         <action name="Execute">
-            <command>/home/saja/workspace/bin/sublime_text_3/sublime_text</command>
+            <command>/home/saja/workspace/bin/bin/Wm.sh -3 </command>
      </action>
     </keybind>
     <keybind key="W-4">
         <action name="Execute">
-            <command>/home/saja/workspace/bin/bin/WM.sh --mpv</command>
+            <command>/home/saja/workspace/bin/bin/WM.sh -4 </command>
      </action>
     </keybind>
     <keybind key="W-`">
         <action name="Execute">
-            <command>/home/saja/workspace/bin/bin/WM.sh --okular</command>
+            <command>/home/saja/workspace/bin/bin/WM.sh -0 </command>
      </action>
     </keybind>
     <!-- Keybindings for windows -->

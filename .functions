@@ -117,6 +117,13 @@ alias clare="clear"
 alias subl="subl -a"
 # alias cmus="cd ~/.cmus/;cmus"
 alias locate="locate --regex -i -d $src/lists/Saja.db -d $src/lists/Data.db"
+alias lo="locate"
+function lompv(){
+mpv `locate $1`
+}
+function mpvlo(){
+mpv `locate $1`
+}
 # alias Dropbox="/usr/bin/dropbox"
 # alias cmatrix="cmatrix -b -s"
 alias open="xdg-open"

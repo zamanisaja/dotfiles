@@ -20,6 +20,7 @@ Plug 'lervag/vimtex' , { 'for' : 'latex' }
 Plug 'vimwiki/vimwiki' , {'for' : 'wiki' }
 
 " Plug 'davidhalter/jedi-vim'
+" Plug 'tpope/vim-surround'
 " Plug 'djoshea/vim-autoread'
 " Plug 'klen/python-mode'
 " Plug 'jistr/vim-nerdtree-tabs'
@@ -63,3 +64,16 @@ let g:EclimCompletionMethod = 'omnifunc'
 
 " Java
 " autocmd FileType java setlocal omnifunc=javacomplete#Complete
+"
+"
+"
+" Manual 
+"
+" mm Mark the currnet line we are in into m
+" `m goes back to that line
+"
+" :ca syn set syntax
+" :syn
+" 
+" :map test :echo "bar"<CR>
+" 
