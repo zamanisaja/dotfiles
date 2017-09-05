@@ -133,6 +133,8 @@ def parse_options():
         print("nfo file is : %s" % nfo_file)
         # 
         media_info =  get_info(nfo_file)
+        print ("media Info: " , media_info)
+        print ("input dict:" , input_dict)
         t = input_dict['media_type'] + "\n"  + str(media_info) + "\n"
         episode_info = {}
         show_info = {}

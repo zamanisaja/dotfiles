@@ -72,7 +72,7 @@ _k_friendly_name=ksmserver
 [kwin]
 Activate Window Demanding Attention=Ctrl+Alt+A,Ctrl+Alt+A,Activate Window Demanding Attention
 Decrease Opacity=Meta+_,none,Decrease Opacity of Active Window by 5 %
-Expose=\tAlt+Esc,Ctrl+F9,Toggle Present Windows (Current desktop)
+Expose=none,Ctrl+F9,Toggle Present Windows (Current desktop)
 ExposeAll=Ctrl+F10\tLaunch (C),Ctrl+F10\tLaunch (C),Toggle Present Windows (All desktops)
 ExposeClass=none,Ctrl+F7,Toggle Present Windows (Window class)
 Increase Opacity=Meta++,none,Increase Opacity of Active Window by 5 %
@@ -87,7 +87,7 @@ MoveZoomUp=Meta+Up,Meta+Up,Move Zoomed Area Upwards
 Remove Window From Group=none,none,Remove Window From Group
 Setup Window Shortcut=none,none,Setup Window Shortcut
 Show Desktop=Meta+D,none,Show Desktop
-ShowDesktopGrid=Meta+Esc,Ctrl+F8,Show Desktop Grid
+ShowDesktopGrid=Alt+Esc,Ctrl+F8,Show Desktop Grid
 Suspend Compositing=Alt+Shift+F12,Alt+Shift+F12,Suspend Compositing
 Switch One Desktop Down=none,none,Switch One Desktop Down
 Switch One Desktop Up=none,none,Switch One Desktop Up

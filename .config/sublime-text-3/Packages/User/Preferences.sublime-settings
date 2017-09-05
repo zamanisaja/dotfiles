@@ -1,7 +1,13 @@
 {
-	"font_size": 17,
+	"font_size": 19,
 	"ignored_packages":
 	[
+		"Anaconda",
+		"Git",
+		"Jedi - Python autocompletion",
+		"Seti_UI",
+		"Seti_UX",
+		"SideBarEnhancements",
 		"Vintage"
 	]
 }
