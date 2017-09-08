@@ -234,8 +234,8 @@ def_key "a"
 #
 
 def_key "m"
-    dummy
-#  move_selected_items_up
+  select_item
+  scroll_down
 #
 #def_key "m"
 #  toggle_media_library_sort_mode

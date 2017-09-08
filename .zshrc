@@ -1,4 +1,5 @@
 zstyle ':completion:*:*:mpv:*' tag-order '!urls'
+zstyle ':completion:*:*:mpv:*' file-patterns '*.(#i)(mkv|mp4|flac|m4a)(-.) *(-/):directories' '*:all-files'
 
 export ADOTDIR="$HOME/.zsh/antigen-cache"
 source ~/.zsh/antigen/antigen.zsh
