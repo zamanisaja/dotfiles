@@ -1,5 +1,5 @@
 [Data]
-DataCount=10
+DataCount=9
 
 [Data_1]
 Comment=KMenuEdit Global Shortcuts
@@ -8,32 +8,6 @@ Enabled=true
 Name=KMenuEdit
 SystemGroup=1
 Type=ACTION_DATA_GROUP
-
-[Data_10]
-Comment=Comment
-Enabled=true
-Name=telegram
-Type=SIMPLE_ACTION_DATA
-
-[Data_10Actions]
-ActionsCount=1
-
-[Data_10Actions0]
-CommandURL=/home/saja/workspace/bin/Telegram/Telegram\s
-Type=COMMAND_URL
-
-[Data_10Conditions]
-Comment=
-ConditionsCount=0
-
-[Data_10Triggers]
-Comment=Simple_action
-TriggersCount=1
-
-[Data_10Triggers0]
-Key=Meta+T
-Type=SHORTCUT
-Uuid={9e0929d1-fdb1-4f60-a27e-18c6b8d8b850}
 
 [Data_1Conditions]
 Comment=
@@ -61,7 +35,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_1_1Triggers0]
-Key=
+Key=Search
 Type=SHORTCUT
 Uuid={d03619b6-9b3c-48cc-9d9c-a2aadb485550}
 
@@ -103,9 +77,9 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_2_1Triggers0]
-Key=
+Key=Print
 Type=SHORTCUT
-Uuid={4db91f9a-844f-44d9-9555-f67461088677}
+Uuid={8757b747-ecd1-439b-8690-c19c0c415dfd}
 
 [Data_2_2]
 Comment=Take a full screen (all monitors) screenshot and save it
@@ -132,9 +106,9 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_2_2Triggers0]
-Key=
+Key=Shift+Print
 Type=SHORTCUT
-Uuid={fd459c8e-4a65-4a66-b3d0-daca65164a78}
+Uuid={921b0177-b5a4-4f20-9e22-d390abd4be8c}
 
 [Data_2_3]
 Comment=Take a screenshot of the currently active window and save it
@@ -161,9 +135,9 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_2_3Triggers0]
-Key=Shift+Print
+Key=Meta+Print
 Type=SHORTCUT
-Uuid={13cabe53-20d9-4ee7-9489-8dcf9c07789b}
+Uuid={953902aa-eab1-4c82-a8c7-c95e127a8b49}
 
 [Data_2_4]
 Comment=Take a screenshot of a rectangular region you specify and save it
@@ -190,9 +164,9 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_2_4Triggers0]
-Key=Print
+Key=Meta+Shift+Print
 Type=SHORTCUT
-Uuid={58acb75e-82df-45c2-9bde-e3ea56f4ee5d}
+Uuid={4ab0b0b5-4ae8-4e55-82b2-c413358eab80}
 
 [Data_3]
 Comment=This group contains various examples demonstrating most of the features of KHotkeys. (Note that this group and all its actions are disabled by default.)
@@ -245,7 +219,7 @@ TriggersCount=1
 [Data_3_1Triggers0]
 Key=Ctrl+Alt+I
 Type=SHORTCUT
-Uuid={2dfb5246-652a-414d-8d21-f4041d944b43}
+Uuid={9d6eacd4-0337-4fbd-8ec1-ba7d3b149cd4}
 
 [Data_3_2]
 Comment=After pressing Alt+Ctrl+H the input of 'Hello' will be simulated, as if you typed it.  This is especially useful if you have call to frequently type a word (for instance, 'unsigned').  Every keypress in the input is separated by a colon ':'. Note that the keypresses literally mean keypresses, so you have to write what you would press on the keyboard. In the table below, the left column shows the input and the right column shows what to type.\n\n"enter" (i.e. new line)                Enter or Return\na (i.e. small a)                          A\nA (i.e. capital a)                       Shift+A\n: (colon)                                  Shift+;\n' '  (space)                              Space
@@ -272,7 +246,7 @@ TriggersCount=1
 [Data_3_2Triggers0]
 Key=Ctrl+Alt+H
 Type=SHORTCUT
-Uuid={633b72e8-f516-44ea-a006-19bb7ac886ca}
+Uuid={29b9d075-4da0-4489-b7cc-64c8e7910ff3}
 
 [Data_3_3]
 Comment=This action runs Konsole, after pressing Ctrl+Alt+T.
@@ -298,7 +272,7 @@ TriggersCount=1
 [Data_3_3Triggers0]
 Key=Ctrl+Alt+T
 Type=SHORTCUT
-Uuid={1ad4c33d-b0ce-4cf5-8521-4d7601a968e5}
+Uuid={2bbb8feb-0745-4146-866e-18b283fddaaa}
 
 [Data_3_4]
 Comment=Read the comment on the "Type 'Hello'" action first.\n\nQt Designer uses Ctrl+F4 for closing windows.  In KDE, however, Ctrl+F4 is the shortcut for going to virtual desktop 4, so this shortcut does not work in Qt Designer.  Further, Qt Designer does not use KDE's standard Ctrl+W for closing the window.\n\nThis problem can be solved by remapping Ctrl+W to Ctrl+F4 when the active window is Qt Designer. When Qt Designer is active, every time Ctrl+W is pressed, Ctrl+F4 will be sent to Qt Designer instead. In other applications, the effect of Ctrl+W is unchanged.\n\nWe now need to specify three things: A new shortcut trigger on 'Ctrl+W', a new keyboard input action sending Ctrl+F4, and a new condition that the active window is Qt Designer.\nQt Designer seems to always have title 'Qt Designer by Trolltech', so the condition will check for the active window having that title.
@@ -343,7 +317,7 @@ TriggersCount=1
 [Data_3_4Triggers0]
 Key=Ctrl+W
 Type=SHORTCUT
-Uuid={4f314bf7-9b33-4062-a105-883535f8ab1e}
+Uuid={fdc50fa2-fd21-4876-ae17-a0b637facf8f}
 
 [Data_3_5]
 Comment=By pressing Alt+Ctrl+W a D-Bus call will be performed that will show the minicli. You can use any kind of D-Bus call, just like using the command line 'qdbus' tool.
@@ -372,7 +346,7 @@ TriggersCount=1
 [Data_3_5Triggers0]
 Key=Ctrl+Alt+W
 Type=SHORTCUT
-Uuid={869b5b65-b45b-4b2a-943d-82dc0fa2d592}
+Uuid={06620848-957b-49f2-9393-9e7688ef3ad2}
 
 [Data_3_6]
 Comment=Read the comment on the "Type 'Hello'" action first.\n\nJust like the "Type 'Hello'" action, this one simulates keyboard input, specifically, after pressing Ctrl+Alt+B, it sends B to XMMS (B in XMMS jumps to the next song). The 'Send to specific window' checkbox is checked and a window with its class containing 'XMMS_Player' is specified; this will make the input always be sent to this window. This way, you can control XMMS even if, for instance, it is on a different virtual desktop.\n\n(Run 'xprop' and click on the XMMS window and search for WM_CLASS to see 'XMMS_Player').
@@ -414,7 +388,7 @@ TriggersCount=1
 [Data_3_6Triggers0]
 Key=Ctrl+Alt+B
 Type=SHORTCUT
-Uuid={13953093-407d-4547-a8e3-e48895d9b34b}
+Uuid={74846761-3ede-492c-a875-b85059e483a6}
 
 [Data_3_7]
 Comment=Konqueror in KDE3.1 has tabs, and now you can also have gestures.\n\nJust press the middle mouse button and start drawing one of the gestures, and after you are finished, release the mouse button. If you only need to paste the selection, it still works, just click the middle mouse button. (You can change the mouse button to use in the global settings).\n\nRight now, there are the following gestures available:\nmove right and back left - Forward (Alt+Right)\nmove left and back right - Back (Alt+Left)\nmove up and back down  - Up (Alt+Up)\ncircle anticlockwise - Reload (F5)\n\nThe gesture shapes can be entered by performing them in the configuration dialog. You can also look at your numeric pad to help you: gestures are recognized like a 3x3 grid of fields, numbered 1 to 9.\n\nNote that you must perform exactly the gesture to trigger the action. Because of this, it is possible to enter more gestures for the action. You should try to avoid complicated gestures where you change the direction of mouse movement more than once.  For instance, 45654 or 74123 are simple to perform, but 1236987 may be already quite difficult.\n\nThe conditions for all gestures are defined in this group. All these gestures are active only if the active window is Konqueror (class contains 'konqueror').
@@ -606,7 +580,7 @@ TriggersCount=1
 [Data_3_8Triggers0]
 Key=Meta+E
 Type=SHORTCUT
-Uuid={d0624221-c10c-4436-8589-334a008ee8f1}
+Uuid={59e89195-535f-4494-befe-97e3320e864e}
 
 [Data_4]
 Comment=Basic Konqueror gestures.
@@ -1035,12 +1009,12 @@ TriggersCount=1
 [Data_5Triggers0]
 Key=Meta+`
 Type=SHORTCUT
-Uuid={9eba5493-1285-41f1-b255-f4044b320467}
+Uuid={c8d2f972-7589-4a71-9c80-44a55c8d47ac}
 
 [Data_6]
 Comment=Comment
 Enabled=true
-Name=Chromium
+Name=chrome
 Type=SIMPLE_ACTION_DATA
 
 [Data_6Actions]
@@ -1061,12 +1035,12 @@ TriggersCount=1
 [Data_6Triggers0]
 Key=Meta+1
 Type=SHORTCUT
-Uuid={1ae8e535-144c-4147-8a34-f6cdf0499218}
+Uuid={7efddae0-0272-4ad7-9745-f7c214786ffa}
 
 [Data_7]
 Comment=Comment
 Enabled=true
-Name=Konsole
+Name=terminal
 Type=SIMPLE_ACTION_DATA
 
 [Data_7Actions]
@@ -1087,12 +1061,12 @@ TriggersCount=1
 [Data_7Triggers0]
 Key=Meta+2
 Type=SHORTCUT
-Uuid={2cf0b896-1f90-4ff1-8970-0ec4a8381b76}
+Uuid={ae0d42a6-3c45-4a86-978a-917b62058dfe}
 
 [Data_8]
 Comment=Comment
 Enabled=true
-Name=Okular
+Name=okulr
 Type=SIMPLE_ACTION_DATA
 
 [Data_8Actions]
@@ -1113,7 +1087,7 @@ TriggersCount=1
 [Data_8Triggers0]
 Key=Meta+3
 Type=SHORTCUT
-Uuid={2f8dfbf1-f222-4c57-b2cb-b70ca2aa4071}
+Uuid={88fa3dc5-a030-49ce-ac57-95df0ef4e098}
 
 [Data_9]
 Comment=Comment
@@ -1139,7 +1113,7 @@ TriggersCount=1
 [Data_9Triggers0]
 Key=Meta+4
 Type=SHORTCUT
-Uuid={035e9d08-422f-4627-9945-43f2c2c39e10}
+Uuid={5f20fdd8-3260-469c-b9d8-1a44897e05c9}
 
 [General]
 BrowserApplication[$d]
