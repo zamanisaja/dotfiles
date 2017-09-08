@@ -55,14 +55,19 @@ no-video
 profile=audio
 
 [trakt]
-# profile=pseudo-gui
 script="/home/saja/.config/mpv/trakt.lua"
 
 [pseudo-gui]
 vo=opengl
 force-window=yes
 idle=once
-script=/home/saja/.config/mpv/autoload.lua,/home/saja/.config/mpv/trakt.lua
+script=/home/saja/.config/mpv/trakt.lua
+
+[builtin-pseudo-gui]
+vo=opengl
+force-window=yes
+idle=once
+script=/home/saja/.config/mpv/trakt.lua
 
 [protocol.http]
 no-resume-playback

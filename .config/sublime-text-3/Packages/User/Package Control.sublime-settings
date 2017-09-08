@@ -2,10 +2,6 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"Jedi - Python autocompletion",
-		"Seti_UI",
-		"Seti_UX",
-		"SideBarEnhancements"
 	],
 	"installed_packages":
 	[
