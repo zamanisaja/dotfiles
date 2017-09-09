@@ -1,5 +1,8 @@
 require 'os'
 local utils = require 'mp.utils'
+-- Removes files from this list of extensions from now playing
+exclude_extensions =  {'srt', 'vtt', 'jpg', 'jpeg', 'png', 'nfo', }
+
 --replace matches on filenames
 --format: {['string to match'] = 'value to replace as', ...} - replaces will be done in random order
 --put as false to not replace anything
@@ -124,15 +127,32 @@ function scandirectory(arg)
   return directory, i
 end
 
-function scanplaylist(  )
-  n = mp.get_property('playlist-count')
-  items = {}
-  for i= 0 ,n-1 do
-    _ , items [i] = utils.split_path ( mp.get_property("playlist/" .. tostring(i) .. "/filename"))
-    if string.match(items[i] , ".srt") then
-        items[i] = ""
+function clean_playlist(  )
+  n = tonumber (mp.get_property('playlist-count'))
+  i = 0
+  while (i < n ) do
+    f = mp.get_property("playlist/" .. tostring(i) .. "/filename")
+    print ("Index is: " .. tostring(i))
+    print ("Filename is " .. tostring(f))
+    for _,ext in pairs(exclude_extensions) do
+      if string.match(f,ext) then
+    -- if string.match(f,".jpg") then
+        print ("Removing file " .. tostring(i) .."th : " .. f .. " from playlist")
+        mp.command("playlist-remove " .. tostring(i))
+        n = n-1
+        i = i-1
+      end
     end
-    -- print (items[i])
+    i = i + 1
+  end
+end
+
+
+function scanplaylist(  )
+  n = tonumber(mp.get_property('playlist-count'))
+  items = {}
+  for i = 0 ,n-1 do
+    _ , items [i] = utils.split_path ( mp.get_property("playlist/" .. tostring(i) .. "/filename"))
   end
   return items,n
 end
@@ -303,6 +323,10 @@ end
 
 
 -- mp.add_forced_key_binding("A", "toggle", togglemode)
+
+mp.register_event("start-file", clean_playlist)
+-- mp.register_event("playback-restart", clean_playlist)
+
 
 mp.add_forced_key_binding("Ctrl+o", "addmode", open_addmode)
 mp.add_forced_key_binding("Ctrl+p", "playlistmode", open_playlistmode)
