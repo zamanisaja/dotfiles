@@ -12,7 +12,7 @@ _k_friendly_name=kaccess
 Disable Touchpad=Touchpad Off,Touchpad Off,Disable Touchpad
 Enable Touchpad=Touchpad On,Touchpad On,Enable Touchpad
 Toggle Touchpad=Touchpad Toggle,Touchpad Toggle,Toggle Touchpad
-_k_friendly_name=System Settings
+_k_friendly_name=KDE Daemon
 
 [kded5]
 Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,Decrease Keyboard Brightness
@@ -24,31 +24,21 @@ PowerOff=Power Off,Power Off,Power Off
 Show System Activity=Ctrl+Esc,Ctrl+Esc,Show System Activity
 Sleep=Sleep,Sleep,Suspend
 Toggle Keyboard Backlight=Keyboard Light On/Off,Keyboard Light On/Off,Toggle Keyboard Backlight
-_k_friendly_name=KDE Daemon
+_k_friendly_name=Power Management
 display=Display\tMeta+P,Display\tMeta+P,Switch Display
 
 [khotkeys]
-_k_friendly_name=System Settings
-{035e9d08-422f-4627-9945-43f2c2c39e10}=Meta+4,none,mpv
-{13cabe53-20d9-4ee7-9489-8dcf9c07789b}=Shift+Print,none,Take Active Window Screenshot
-{1ae8e535-144c-4147-8a34-f6cdf0499218}=Meta+1,none,Chromium
-{2cf0b896-1f90-4ff1-8970-0ec4a8381b76}=Meta+2,none,Konsole
-{2f8dfbf1-f222-4c57-b2cb-b70ca2aa4071}=Meta+3,none,Okular
+_k_friendly_name=KDE Daemon
 {4ab0b0b5-4ae8-4e55-82b2-c413358eab80}=Meta+Shift+Print,none,Take Rectangular Region Screenshot
-{4db91f9a-844f-44d9-9555-f67461088677}=,none,Start Screenshot Tool
-{58acb75e-82df-45c2-9bde-e3ea56f4ee5d}=Print,none,Take Rectangular Region Screenshot
 {5f20fdd8-3260-469c-b9d8-1a44897e05c9}=Meta+4,none,mpv
 {7efddae0-0272-4ad7-9745-f7c214786ffa}=Meta+1,none,chrome
-{8757b747-ecd1-439b-8690-c19c0c415dfd}=Print,none,Start Screenshot Tool
+{8757b747-ecd1-439b-8690-c19c0c415dfd}=none,none,Start Screenshot Tool
 {88fa3dc5-a030-49ce-ac57-95df0ef4e098}=Meta+3,none,okulr
-{921b0177-b5a4-4f20-9e22-d390abd4be8c}=Shift+Print,none,Take Full Screen Screenshot
+{921b0177-b5a4-4f20-9e22-d390abd4be8c}=none,none,Take Full Screen Screenshot
 {953902aa-eab1-4c82-a8c7-c95e127a8b49}=Meta+Print,none,Take Active Window Screenshot
-{9e0929d1-fdb1-4f60-a27e-18c6b8d8b850}=Meta+T,none,telegram
-{9eba5493-1285-41f1-b255-f4044b320467}=Meta+`,none,IDE
 {ae0d42a6-3c45-4a86-978a-917b62058dfe}=Meta+2,none,terminal
-{c8d2f972-7589-4a71-9c80-44a55c8d47ac}=Meta+`,none,IDE
+{c8d2f972-7589-4a71-9c80-44a55c8d47ac}=none,none,IDE
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=Search,none,Search
-{fd459c8e-4a65-4a66-b3d0-daca65164a78}=none,none,Take Full Screen Screenshot
 
 [kmix]
 _k_friendly_name=Audio Volume
@@ -76,7 +66,7 @@ Lock Session=Ctrl+Alt+L\tScreensaver,Ctrl+Alt+L\tScreensaver,Lock Session
 Log Out=Ctrl+Alt+Del,none,Log Out
 Log Out Without Confirmation=Ctrl+Alt+Shift+Del,none,Log Out Without Confirmation
 Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp,none,Reboot Without Confirmation
-_k_friendly_name=System Settings
+_k_friendly_name=ksmserver
 
 [kwin]
 Activate Window Demanding Attention=Ctrl+Alt+A,Ctrl+Alt+A,Activate Window Demanding Attention
@@ -221,7 +211,7 @@ Window to Screen 4=none,none,Window to Screen 4
 Window to Screen 5=none,none,Window to Screen 5
 Window to Screen 6=none,none,Window to Screen 6
 Window to Screen 7=none,none,Window to Screen 7
-_k_friendly_name=System Settings
+_k_friendly_name=KWin
 view_actual_size=Meta+0,Meta+0,Actual Size
 view_zoom_in=Meta+=,Meta+=,Zoom In
 view_zoom_out=Meta+-,Meta+-,Zoom Out
