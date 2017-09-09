@@ -1,5 +1,5 @@
 zstyle ':completion:*:*:mpv:*' tag-order '!urls'
-zstyle ':completion:*:*:mpv:*' file-patterns '*.(#i)(mkv|mp4|flac|m4a)(-.) *(-/):directories' '*:all-files'
+zstyle ':completion:*:*:mpv:*' file-patterns '*.(#i)(mp3|mkv|mp4|flac|m4a)(-.) *(-/):directories' '*:all-files'
 
 export ADOTDIR="$HOME/.zsh/antigen-cache"
 source ~/.zsh/antigen/antigen.zsh
@@ -123,3 +123,5 @@ HISTFILE=$HOME/.history
 
 PROMPT="${ret_status} %{$fg[cyan]%}%c%{$reset_color%} "
 # PROMPT="${ret_status} %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)"
+
+eval $(thefuck --alias)
