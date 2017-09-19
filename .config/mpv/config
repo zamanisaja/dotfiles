@@ -12,6 +12,7 @@ ao=alsa:resample=no
 save-position-on-quit
 write-filename-in-watch-later-config
 ytdl
+cache-secs=20  
 #ytdl-raw-options=yes-playlist,netrc=,quiet=
 
 sub-auto=fuzzy
