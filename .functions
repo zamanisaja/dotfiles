@@ -119,10 +119,19 @@ alias subl="subl -a"
 alias locate="locate --regex -i -d $src/lists/Saja.db -d $src/lists/Data.db"
 alias lo="locate"
 function lompv(){
-mpv `locate $1`
+play_file=$(mktemp --suffix=.m3u)
+locate "$1" > "$play_file"
+shift
+echo "$@"
+mpv "$@" "$play_file" 
 }
+
 function mpvlo(){
-mpv `locate $1`
+play_file=$(mktemp --suffix=.m3u)
+locate "$1" > "$play_file"
+shift
+echo "$@"
+mpv "$@" "$play_file" 
 }
 # alias Dropbox="/usr/bin/dropbox"
 # alias cmatrix="cmatrix -b -s"
