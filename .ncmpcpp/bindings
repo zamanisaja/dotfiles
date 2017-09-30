@@ -161,6 +161,11 @@ def_key "."
 
 #
 
+def_key "n"
+  next_found_item
+#
+def_key "N"
+  next_found_item
 #find_item_forward 
 def_key "?"
   next_found_item

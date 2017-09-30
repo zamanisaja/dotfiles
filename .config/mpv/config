@@ -40,7 +40,8 @@ script="/home/saja/.config/mpv/trakt.lua"
 vo=opengl
 force-window=yes
 idle=once
-script=/home/saja/.config/mpv/trakt.lua
+# script=/home/saja/.config/mpv/trakt.lua
+script=/home/saja/.config/mpv/autoload.lua
 
 [builtin-pseudo-gui]
 vo=opengl

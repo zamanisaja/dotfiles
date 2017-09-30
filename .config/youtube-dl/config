@@ -3,7 +3,7 @@
 --no-playlist 
 --continue 
 --no-part
---no-overwrites
+# --no-overwrites
 --write-sub
 --write-auto-sub
 --convert-subs srt
@@ -14,7 +14,7 @@
 --ignore-errors
 
 
---output '%(uploader)s-%(title)s-(%(id)s).%(ext)s'
+--output '(%(upload_date)s)-%(uploader)s-%(title)s-(%(id)s).%(ext)s'
 
 # --netrc
 
