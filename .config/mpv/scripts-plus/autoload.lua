@@ -164,5 +164,5 @@ function find_and_add_entries()
     add_files_at(pl_current + 1, append[1])
     add_files_at(pl_current, append[-1])
 end
-
+ 
 mp.register_event("start-file", find_and_add_entries)

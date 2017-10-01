@@ -34,8 +34,14 @@ function os.capture(cmd, raw)
 end
 
 function show_info(  )
-    -- mp.command("show-progress")
-    mp.osd_message(stripfile(mp.get_property('filename')),4)
+    file_dir = mp.get_property("working-directory")
+    -- %w : alphanumerical letters
+    -- [%w_] : alphanumerical letters plus underscore
+    -- %1 captures firs
+    s = string.gsub(string.gsub(file_dir,".*/([%w_]+)/([%w_]+)$","%1/%2"),"_"," ")
+    -- print (file_dir)
+    -- print (s)
+    mp.osd_message(stripfile(mp.get_property('filename')) .. "\n" ..  s , 4)
 end
 
 function stripfile(pathfile)
@@ -68,7 +74,8 @@ end
 function handler(arg)
   if not path then
     if mp.get_property('path') then
-      path = string.sub(mp.get_property("path"), 1, string.len(mp.get_property("path"))-string.len(mp.get_property("filename")))
+      -- path = string.sub(mp.get_property("path"), 1, string.len(mp.get_property("path"))-string.len(mp.get_property("filename")))
+      path = mp.get_property("working-directory") .. "/"
     end
   end
   local output = ""
@@ -105,7 +112,6 @@ function handler(arg)
   -- path = utils.split_path ( mp.get_property("filename"))
 end
 
-
 function scandirectory(arg)
   local directory = {}
   local search = string.gsub(arg, "%s+", "\\ ")..'*'
@@ -136,7 +142,6 @@ function clean_playlist(  )
     print ("Filename is " .. tostring(f))
     for _,ext in pairs(exclude_extensions) do
       if string.match(f,ext) then
-    -- if string.match(f,".jpg") then
         print ("Removing file " .. tostring(i) .."th : " .. f .. " from playlist")
         mp.command("playlist-remove " .. tostring(i))
         n = n-1
@@ -146,7 +151,6 @@ function clean_playlist(  )
     i = i + 1
   end
 end
-
 
 function scanplaylist(  )
   n = tonumber(mp.get_property('playlist-count'))

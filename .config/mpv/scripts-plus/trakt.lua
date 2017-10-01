@@ -28,16 +28,5 @@ function stop_to_traktpy(  )
     res = mputils.subprocess(t) 
 end
 
-
-
 mp.register_event('playback-restart'   ,start_to_traktpy)
 mp.register_event('end-file'   ,stop_to_traktpy)
--- mp.register_event('playback-restart'   ,test)
--- mp.observe_property("percent-pos" , "float" , test)
-
-
-
-
-
-
--- mp.register_event("file-loaded",start_to_traktpy)

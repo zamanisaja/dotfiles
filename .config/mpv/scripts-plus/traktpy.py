@@ -27,12 +27,10 @@ input_dict ={
 def send_notify(title,text):
     os.system(('notify-send --icon trakt "' + title + '" "' + text  + '"' ).encode('ascii','replace'))
 
-
-
 def get_access(config_file):
     res = Trakt['oauth/device'].code()
     if sys.version.startswith("3"):
-        input ("Visit %s and put the code \"%s\" Then enter\n" % (res['verification_url'] , res['user_code']) )
+        input ("Visit %s and put the code \"%s\" Then press enter\n" % (res['verification_url'] , res['user_code']) )
     else:
         raw_input ("Visit %s and put the code \"%s\" Then enter\n" % (res['verification_url'] , res['user_code']) )
     authorization = Trakt['oauth/device'].token(res['device_code'])
@@ -95,7 +93,6 @@ def get_info(nfo_file):
                 ret ['ids']['tmbd'] = child.text
     return ret
 
-
 def find(pattern, path):
     result = []
     for root, dirs, files in os.walk(path):
@@ -103,7 +100,6 @@ def find(pattern, path):
             if fnmatch.fnmatch(name, pattern):
                 result.append(os.path.join(root, name))
     return result
-
 
 def parse_options():
     optlist, args = getopt.getopt(sys.argv[1:],shortopts=None,longopts=["command=","progress=","path=" , "file=","duration="])
@@ -201,13 +197,8 @@ def test():
     init_token()
     for key, movie in Trakt['sync/watched'].movies().items():
         print('%s (%s)' % (movie.title, movie.year))    
-    # ... now watching:
-    # Trakt['scrobble'].start(movie=movie_info,progress=100)
-    # sccrobble:
-    # Trakt['scrobble'].stop(show=show_info,episode=episode_info,progress=100)
 
 if __name__ == '__main__':
-    # print ( "!!!!!!!!!!!!!!!!!!!!!!!!!!! ")
     init_token()
     parse_options()
     # test()
