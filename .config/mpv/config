@@ -4,7 +4,8 @@ input-file=/home/saja/.config/mpv/fifo
 screenshot-directory="/home/saja/New/Pictures/"
 screenshot-jpeg-quality=100
 ontop
-msg-level=sub=no,ffmpeg/audio=no,vo/opengl/x11=error,extras=no
+msg-level=ffmpeg/audio=no,vo/opengl/x11=error,extras=no
+msg-level=sub=no
 ao=alsa:resample=no
 
 save-position-on-quit
