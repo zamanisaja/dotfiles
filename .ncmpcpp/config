@@ -5,14 +5,14 @@
 #
 ##### connection settings #####
 #
-ncmpcpp_directory = "/home/saja/.ncmpcpp"
+ncmpcpp_directory = "~/.ncmpcpp"
 ## set it in order to make tag editor and renaming files work properly
 #
 #mpd_host = "localhost"
 #
 mpd_port = "6600"
 #
-mpd_music_dir = "/home/saja/Music/"
+mpd_music_dir = "~/Music/"
 #
 mpd_connection_timeout = "5"
 #
@@ -219,7 +219,7 @@ now_playing_prefix = "$b"
 ## Attention: It doesn't support song format anymore.
 ## Use `ncmpcpp --now-playing SONG_FORMAT` instead.
 ##
-execute_on_song_change = "/home/saja/.ncmpcpp/notify.sh"
+execute_on_song_change = "~/.ncmpcpp/notify.sh"
 #
 #playlist_show_remaining_time = "no"
 #

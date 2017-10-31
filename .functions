@@ -72,6 +72,10 @@ mpc > /dev/null 2>&1
 if [ $? -ne 0 ] 
     then
     /usr/bin/mpd -v 
+    if [ $? -ne 0 ]
+    then 
+        /usr/local/bin/mpd -v
+    fi
     mpc update > /dev/null 2>&1
     mpdscribble
     ncmpcpp

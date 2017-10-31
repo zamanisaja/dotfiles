@@ -1,12 +1,12 @@
 # Write your default config options here!
 #
-input-file=/home/saja/.config/mpv/fifo
-screenshot-directory="/home/saja/New/Pictures/"
+input-file="~/.config/mpv/fifo"
+screenshot-directory="$HOME/New/Pictures/"
 screenshot-jpeg-quality=100
 ontop
 msg-level=ffmpeg/audio=no,vo/opengl/x11=error,extras=no
 msg-level=sub=no
-ao=alsa:resample=no
+# ao=alsa:resample=no
 
 save-position-on-quit
 write-filename-in-watch-later-config
@@ -34,33 +34,33 @@ script-opts=osc-scalefullscreen=0.8
 
 [trakt]
 msg-level=trat=no
-script=/home/saja/.config/mpv/scripts-plus/trakt.lua
+script=$HOME/.config/mpv/scripts-plus/trakt.lua
 
 [pseudo-gui]
 vo=opengl
 force-window=yes
 idle=once
-script=/home/saja/.config/mpv/scripts-plus/autoload.lua
-#script=/home/saja/.config/mpv/trakt.lua
+script=$HOME/.config/mpv/scripts-plus/autoload.lua
+#script=$HOME/.config/mpv/trakt.lua
 
 [autoload]
-script=/home/saja/.config/mpv/scripts-plus/autoload.lua
+script=$HOME/.config/mpv/scripts-plus/autoload.lua
 
 [builtin-pseudo-gui]
 vo=opengl
 force-window=yes
 idle=once
-script=/home/saja/.config/mpv/trakt.lua
+script=$HOME/.config/mpv/trakt.lua
 
 [extension.mp3]
-script=/home/saja/.config/mpv/scripts-plus/notify.lua
-input-file=/home/saja/.config/mpv/fifo-audio
+script=$HOME/.config/mpv/scripts-plus/notify.lua
+input-file=$HOME/.config/mpv/fifo-audio
 
 [audio]
 force-window=no
 vo=null
-script=/home/saja/.config/mpv/scripts-plus/notify.lua
-input-file=/home/saja/.config/mpv/fifo-audio
+script=$HOME/.config/mpv/scripts-plus/notify.lua
+input-file=$HOME/.config/mpv/fifo-audio
 no-video
 vo=null
 

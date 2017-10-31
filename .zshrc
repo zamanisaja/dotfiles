@@ -125,3 +125,7 @@ PROMPT="${ret_status} %{$fg[cyan]%}%c%{$reset_color%} "
 # PROMPT="${ret_status} %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)"
 
 eval $(thefuck --alias)
+
+# Mac Compatible
+alias ls=ls
+export CLICOLOR=1

@@ -1,4 +1,4 @@
-#! /usr/bin/python
+#!/usr/local/bin/python2
 import ast
 from trakt import Trakt
 import getopt
