@@ -27,4 +27,6 @@ function shift_del()
 end
 
 mp.add_forced_key_binding("del", "delete-file", help)
+mp.add_forced_key_binding("BS", "delete-file", help)
 mp.add_forced_key_binding("Shift+del", "shift-delete-file", shift_del)
+mp.add_forced_key_binding("Shift+BS", "shift-delete-file", shift_del)

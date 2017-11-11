@@ -28,7 +28,7 @@ antigen apply
 
 # If you come from bash you might have to change your $PATH.
 
-export PATH="/usr/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+# export PATH="/usr/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 export PATH="$HOME/workspace/bin/bin:$PATH"
 # export PATH="$HOME/workspace/anaconda3/bin:$PATH"
 
@@ -113,6 +113,7 @@ source $ZSH/oh-my-zsh.sh
 #
 
 source ~/.functions
+source ~/.zshrc.local
 unsetopt share_history
 setopt no_share_history
 HISTFILE=$HOME/.history

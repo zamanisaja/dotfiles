@@ -356,6 +356,7 @@ current_item_prefix = "$(yellow)$r"
 #
 #alternative_ui_separator_color = "black"
 #
+#
 #window_border_color = "green"
 #
 active_window_border = "blue"

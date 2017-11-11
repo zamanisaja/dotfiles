@@ -16,8 +16,6 @@ cache-secs=20
 
 sub-auto=fuzzy
 slang=es,en,fa
-#sub-codepage=utf8:cp1256
-sub-codepage=ISO-8859-1:utf8
 sub-scale=0.6
 
 geometry=100%:100%
