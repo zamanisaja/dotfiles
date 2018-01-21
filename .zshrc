@@ -124,4 +124,4 @@ HISTFILE=$HOME/.history
 PROMPT="${ret_status} %{$fg[cyan]%}%c%{$reset_color%} "
 # PROMPT="${ret_status} %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)"
 
-eval $(thefuck --alias)
+# eval $(thefuck --alias)

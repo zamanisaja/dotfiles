@@ -43,7 +43,7 @@ set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
 set autoread  " Auto reload file on change
 set number    " set nonumber
-set nrformats=alpha,bin,octal,hex " Number Formats
+set nrformats=alpha,octal,hex " Number Formats
 set hls " Highlight Search  | set hlsearch | set nohlsearch
 set ic " Ignore Case | set noic
 
