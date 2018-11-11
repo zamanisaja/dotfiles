@@ -1,6 +1,6 @@
 # dotfiles
 
-install Antigen:
+# Install Antigen:
 mkdir -pv ~/.zsh/antigen
 curl -L git.io/antigen > ~/.zsh/antigen/antigen.zsh
 
