@@ -1,4 +1,4 @@
-# dotfiles
+# Dotfiles
 
 # Install Antigen:
 mkdir -pv ~/.zsh/antigen
