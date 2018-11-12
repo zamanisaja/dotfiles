@@ -1,0 +1,3 @@
+[submodule ".config/mpv/scripts"]
+	path = .config/mpv/scripts
+	url = git@github.com:zamanisaja/mpv-scripts.git
